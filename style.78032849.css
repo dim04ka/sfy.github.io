@@ -1,0 +1,172 @@
+
+
+:root {
+    --default: "Roboto" , sans-serif;
+    --gray: #828282;
+    --blue: #56ccf2;
+    --yellow: #f2c94c;
+    --white: #fff;
+    --black: #000;
+    --gold: #c8a35f;
+    --dark: #2f343a;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto"
+,
+sans-serif;
+    font-family: var(--default);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--fonts-gray);
+    background-color: #fff;
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto
+}
+
+@media (max-width: 1170px) {
+
+.container {
+        width: 95%
+}
+    }
+
+.wrapper {
+    background: url("bg.a404a63d.png");
+}
+
+.wrapper__ball {
+        position: absolute;
+        width: 769px;
+        height: 769px;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+.logo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6.25rem;
+    line-height: 7.3125rem;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    margin: 0 auto;
+    width: 203px;
+    height: 203px;
+    color: white;
+    padding-top: 40px;
+}
+
+.logo__disc {
+        text-align: center;
+        font-size: 2.1875rem;
+        line-height: 2.5625rem;
+        color: #FFFFFF;
+    }
+
+.company {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 495px;
+    height: 450px;
+}
+
+.company__info {
+        font-family: SeoulNamsan;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        letter-spacing: 0.24em;
+        color: #C7C7C7;
+        margin-bottom: 30px;
+    }
+
+.company__title {
+        font-family: SeoulNamsan;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.125rem;
+        line-height: 2.5rem;
+        color: #FFFFFF;
+        margin-bottom: 33px;
+    }
+
+.company__disc {
+        font-family: SeoulNamsan;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25rem;
+        line-height: 1.5625rem;
+        color: #FFFFFF;
+        width: 474px;
+        width: 474px;
+    }
+
+
+
+
+
+/***********************************************************/
+
+#fp-nav .active span {
+    background: white;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: white;
+}
+
+#fp-nav ul li, .fp-slidesNav ul li {
+    
+    
+    margin-bottom: 15px;
+    
+}
+
+/***********************************menu************************/
+#myMenu {
+    position: absolute;
+    z-index: 999;
+    list-style-type: none;
+    font-size: 1rem;
+    line-height: 175.69%;
+    text-align: right;
+    color: #FFFFFF;
+    right: 56px;
+    top: 362px
+}
+#myMenu a {
+        color: #808080;
+        -webkit-text-decoration-line: none;
+                text-decoration-line: none;
+        transition: all .3s
+    }
+#myMenu a:hover {
+            color: white;
+        }
+#myMenu .active a{
+        color: white;
+    }
+
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
