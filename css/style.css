@@ -137,8 +137,8 @@ body, html {
 .firstblock-btn-mobile {
 
     position: absolute;
-    top: 10%;
-    left: 50px;
+    top: 20px;
+    left: 10px;
     transition: all .3s;  
     display: none;  
     cursor: pointer;  
@@ -358,7 +358,6 @@ body, html {
     border: 1px solid white;
     color: white;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     /* animation: headerContent 1s; */
 }
 
@@ -399,7 +398,7 @@ body, html {
 }
 
 .firstblock__content__disc {
-        font-size: 2.125rem;
+        font-size: 2rem;
         line-height: 2.5rem;
         width: 200px;
         height: 50px;
@@ -475,8 +474,8 @@ body, html {
     height: 3000px;
     background: #1A191C;
     right: 0;
-    transform: rotate(30deg) translateX(16%) translateY(-10%);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transform: rotate(30deg) translateX(16%) translateY(-10%);
     -webkit-animation: slideblackBlock 1s;
             animation: slideblackBlock 1s
 }
@@ -579,7 +578,7 @@ body, html {
 @media(max-width: 550px) {
 
     .fullpage-blackBlock {
-        transform: rotate(15deg) translateX(73%) translateY(-11%);
+        transform: rotate(15deg) translateX(64%) translateY(-11%);
     }
 
     @keyframes slideblackBlock {
@@ -589,7 +588,7 @@ body, html {
         }
       
         to {
-            transform: rotate(15deg) translateX(73%) translateY(-11%);
+            transform: rotate(15deg) translateX(64%) translateY(-11%);
         }
     
     }
@@ -625,8 +624,14 @@ body, html {
         left: 50px;
         cursor: pointer;
         transition: all .3s
-    }
+}
 
+@media (max-width: 768px) {
+    .wrapper-btn {
+        top: 40px;
+        left: 10px;
+    }
+}
 
 .wrapper-btn:hover span:nth-child(2){
             width: 46px;
@@ -701,6 +706,7 @@ body, html {
     }
 
 .company {
+    font-family: 'Cuprum', sans-serif;
     position: relative;
     top: 0;
     left: 0;
@@ -711,6 +717,8 @@ body, html {
     /* height: 450px; */
     padding-left: 250px;
 }
+
+
 
 @media (max-width: 1024px){
 
@@ -787,6 +795,9 @@ body, html {
     color: #00FFFF;
 }
 
+.company__title-spanCounter {
+    color: #00FFFF;
+}
 .company__disc {
     font-size: 18px;
     line-height: 37px;
@@ -841,12 +852,102 @@ body, html {
     text-align: center;
     padding-bottom: 10px;
     margin-left: auto;
-    padding-top: 80px;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 12;
+    background: #1A191C;
 }
 
 @media (max-width: 550px) {
     .company__page {
         padding-top: 10px;
+    }
+}
+
+
+
+.company__icons {
+    position: fixed;
+    display: flex;
+    top: 5px;
+    right: 35px;
+    z-index: 12;
+    transition: all .3s;
+}
+
+
+.company__icons a:nth-child(1) .company__icons-icon {
+    background: url("../img/svg/vkt.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 36px;
+    background-position: center;
+    background-color: #1A1E25;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .3s;
+}
+.company__icons a:nth-child(2) .company__icons-icon {
+    background: url("../img/svg/facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 36px;
+    background-position: center;
+    background-color: #1A1E25;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .3s;
+}
+.company__icons a:nth-child(3) .company__icons-icon {
+    background: url("../img/svg/telegram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 36px;
+    background-position: center;
+    background-color: #1A1E25;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .3s;
+}
+.company__icons a:nth-child(4) .company__icons-icon {
+    background: url("../img/svg/ins.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 36px;
+    background-position: center;
+    background-color: #1A1E25;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .3s;
+}
+.company__icons a:hover .company__icons-icon {
+    border: 1px solid white;
+    transition: all .3s;
+}
+
+#gradient {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 11;
+    border-radius: 50%;
+}
+
+@media(max-width: 768px) {
+    #gradient {
+        width: 500px;
+        height: 500px;
+        left: -100px;
     }
 }
 /***********************************************************/
@@ -855,7 +956,7 @@ body, html {
     left: 50px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
     #fp-nav {
         left: 10px;
     }
@@ -875,7 +976,8 @@ body, html {
 
 #fp-nav ul li, .fp-slidesNav ul li {
     
-    
+    width: 14px;
+    height: 14px;
     margin-bottom: 15px;
     
 }
@@ -893,13 +995,13 @@ body, html {
 #fp-nav ul li a.active span::before {
     content: "";
     display: block;
-    width: 21px;
+    width: 22px;
     height: 22px;
     border-radius: 50%;
     border: 1px solid white;
     position: relative;
-    top: -7px;
-    left: -7px;
+    top: -8px;
+    left: -8px;
     transition: all .3s;
 }
 
