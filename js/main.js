@@ -33,12 +33,43 @@ $(function(){
             break; 
         }
       }
+    })
   })
 
+  $('.firstblock__content__logo').on('click', function(){
+    $('.firstblock').fadeOut(1000);
+    $('.wrapper').fadeIn(1000);
+    
+    $("#fullpage").fullpage({
+      navigation: true,
+      navigationPosition: 'left',
+      afterLoad:function(link,index) {
 
-  // $(this).css('top','10%');
+        switch (index) {
+          case 1: 
+            $('.company__title-spanCounter').html("01");
+            break;
+        
+          case 2: 
+            $('.company__title-spanCounter').html("02");
+            break;
 
-})
+          case 3: 
+            $('.company__title-spanCounter').html("03");
+            break; 
+
+          case 4: 
+            $('.company__title-spanCounter').html("04");
+            break;   
+
+          case 5: 
+            $('.company__title-spanCounter').html("05");
+            break; 
+        }
+      }
+    })
+  })
+
 
   $('.firstblock-btn-mobile').on('click', function(){
     $('.firstblock').fadeOut(1000);
@@ -145,5 +176,5 @@ $(function(){
     }
   }
   
-  setInterval(updateGradient,10);
+  setInterval(updateGradient,5);
 })

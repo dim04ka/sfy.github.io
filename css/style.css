@@ -593,7 +593,24 @@ body, html {
     
     }
 }
+@media(max-width: 400px) {
 
+    .fullpage-blackBlock {
+        transform: rotate(15deg) translateX(69%) translateY(-11%);
+    }
+
+    @keyframes slideblackBlock {
+
+        from {
+            transform: rotate(30deg) translateX(100%) translateY(-10%);
+        }
+      
+        to {
+            transform: rotate(15deg) translateX(69%) translateY(-11%);
+        }
+    
+    }
+}
 
 @keyframes slidefullpagebg {
 
@@ -861,7 +878,9 @@ body, html {
 
 @media (max-width: 550px) {
     .company__page {
-        padding-top: 10px;
+        padding: 0px;
+        bottom: 20px;
+        background: transparent;
     }
 }
 
@@ -881,7 +900,9 @@ body, html {
     }
     
 }
-
+.company__icons a {
+    outline: none;
+}
 
 .company__icons a:nth-child(1) .company__icons-icon {
     background: url("../img/svg/vkt.svg");
@@ -1000,7 +1021,7 @@ body, html {
 #fp-nav ul li:hover a.active span, 
 .fp-slidesNav ul li:hover a.active span {
     background: white;
-    transform: translateX(3px);
+    transform: translate(4px,3px);
     height: 6px;
     width: 6px;
     transition: all .3s;
