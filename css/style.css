@@ -875,6 +875,12 @@ body, html {
     z-index: 12;
     transition: all .3s;
 }
+@media (max-width: 480px) {
+    .company__icons {
+        right: 0;
+    }
+    
+}
 
 
 .company__icons a:nth-child(1) .company__icons-icon {
@@ -947,6 +953,13 @@ body, html {
     #gradient {
         width: 500px;
         height: 500px;
+        left: -100px;
+    }
+}
+@media(max-width: 480px) {
+    #gradient {
+        width: 300px;
+        height: 300px;
         left: -100px;
     }
 }
